@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:rgb(255, 213, 179);
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 85px;
+    height: 140px;
+    margin: 40px;
+    transition: 0.5s ease;
+    background: rgb(255, 166, 93);
+    text-align: center;
+    
+}
+.card .card-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.card .card-img img{
+    max-width: 100%;
+    height: 100%;
+    
+    transition: 0.5s ease;
+}
+.card:hover .card-img img{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.card::before{
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    background: linear-gradient(45deg,black,rgb(255, 133, 76));
+    z-index: -1;
+}
+.card .cont{
+    position: absolute;
+    bottom:-50px;
+    transition: 0.5s ease;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    
+}    
+.card:hover .cont{
+    opacity: 1;
+}
+.card .cont p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+.card .font{
+    position: absolute;
+    bottom:-70px;
+    transition: 0.5s ease;
+    width: 100%;
+    text-align:center;
+    opacity: 0;
+}
+.card:hover .font{
+    opacity: 1;
+}
+.card .font a{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(7, 7, 7);
+    background-color: bisque;
+}
+.card:hover a{
+    background: rgba(255, 74, 74, 0.993);
+    color: rgb(0, 0, 0);cursor: pointer;
+}
+
+
+
+
+

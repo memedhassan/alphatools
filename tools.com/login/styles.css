@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(./image/pexels-karolina-grabowska-7285973.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 300px;
+    border: 5px solid orangered;
+    border-radius: 25px;
+    transition: 0.5s ease;
+    padding: 1px;
+    background: rgb(245, 242, 242);
+}
+.login:hover{
+    box-shadow: 3px 3px 50px red;
+}
+
+.avatar {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1vh;
+    text-align: center;
+    margin: 0;
+    color: rgb(255, 88, 10);
+}
+.input-text{
+    position: relative;
+    margin: 20px;
+    
+}
+.input-text input {
+    width: 100%;
+    padding: 7px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border:none;
+    padding-left: 30px;
+    border-bottom: 2px solid red;
+    transition: 0.5s ease;
+    background: none;
+}
+.input-text input:focus{
+    border-bottom: 5px solid rgb(245, 242, 242);
+    border-radius: 10px;
+}
+.input-text i{
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    color: orangered;
+}
+.btn {
+    width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px;
+    background:none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background: rgba(255, 74, 74, 0.993);
+    color: white;cursor: pointer;
+
+}
+.remember{
+    margin-top: 20px;
+    color: rgb(75, 78, 78);
+}
+a{
+    float:l;
+    font-size: small;
+    align-items:center;
+}
